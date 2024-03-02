@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <style>
+        h1{
+            background-color:lightsteelblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .grid-container{
+            display: grid;
+        grid-template-columns: auto auto auto;
+        background-color:lightblue;
+        padding: 10px;
+        }
+        .grid-item{
+            background-color:cadetblue;
+            border: whitesmoke;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            border-width: 21px;
+            border-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, User</h1>
+    
+    <div class="grid-container">
+        <div class="grid-item">
+    <a href="{{url_for('module1')}}">MODULE 1 : SALUTATIONS IN SIGN LANGUAGE</a> 
+    </div>
+    <div class="grid-item">
+        <a href="{{url_for('module1')}}">MODULE 2 : ASKING FOR HELP</a> 
+    </div>
+    <div class="grid-item">
+        <a href="{{url_for('module1')}}">MODULE 3 : NUMBERS AND COUNTING</a> 
+    </div>
+    <div class="grid-item">
+        <a href="{{url_for('module1')}}">MODULE 4 : EVERYDAY CONVERSATIONS AND PHRASES</a> 
+    </div>
+    </div>
+    <a href="{{url_for('logout')}}">Press here to logout</a>
+</body>
+</html>

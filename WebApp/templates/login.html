@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .header{
+            overflow: hidden;
+  background-color:azure;
+  padding: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="text-align: center; background-color:azure; font-family:Georgia, 'Times New Roman', Times, serif; ">LOGIN</h1>
+    </div>
+    <div style="width: 250px;height: 150px;position: absolute;top: 30%;left: 48%;margin: -35px 0 0 -35px; border:chocolate; border-width: thin; ">
+    
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username }}
+        {{ form.password }} <br>
+        {{ form.submit }}
+    </form>
+    </div>
+    <br>
+    <div  style="text-align: center;">
+    <a href="{{url_for('register')}}">Are you new?</a>
+    </div>
+</body>
+</html>
